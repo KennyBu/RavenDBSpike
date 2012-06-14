@@ -28,9 +28,9 @@ namespace RavenDBSpike
                 queriedCustomer = session.Load<CustomerDocument>(id);
             }
 
-            Console.WriteLine("Original Customer:      {0} {1} {2}",customer.Id,customer.FirstName,customer.LastName);
+            Console.WriteLine("Original Customer:      {0} {1} {2}", customer.Id,customer.FirstName,customer.LastName);
             Console.WriteLine("Retrieved From RavenDB: {0} {1} {2}", queriedCustomer.Id, queriedCustomer.FirstName, queriedCustomer.LastName);
-
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press the any key to continue...");
